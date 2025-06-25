@@ -1,0 +1,140 @@
+<!-- 
+Day 3 Assignment – WebTeam Pvt. Ltd.
+
+Description:
+This webpage demonstrates core HTML concepts:
+- A structured table presenting team roles
+- A user input form
+- Block vs inline element behavior
+- An embedded iframe (Google Map)
+- Use of reusable HTML classes
+
+Learnings:
+Through this task, I gained hands-on experience using HTML elements for structure, input, and design consistency.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 3 HTML Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .section-title {
+            color: darkblue;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background-color: #f0f8ff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid gray;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .inline-example span {
+            background-color: #def;
+            padding: 3px;
+            margin: 2px;
+        }
+
+        .block-example div {
+            background-color: #ffd;
+            padding: 5px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="section-title">Team Members Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Experience</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>Frontend Developer</td>
+                <td>2 Years</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Backend Developer</td>
+                <td>3 Years</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>UI/UX Designer</td>
+                <td>1 Year</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1 class="section-title">User Information Form</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value="">Select</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1 class="section-title">Block vs Inline Elements</h1>
+    <p class="highlight">Block elements (e.g., &lt;div&gt;) take up full width. Inline elements (e.g., &lt;span&gt;) do not break the flow.</p>
+
+    <div class="block-example">
+        <div>Block 1</div>
+        <div>Block 2</div>
+    </div>
+
+    <div class="inline-example">
+        <span>Inline 1</span>
+        <span>Inline 2</span>
+    </div>
+
+    <h1 class="section-title">Embedded Content (Iframe)</h1>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0538623988784!2d144.96315791531742!3d-37.81621897975143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f7df11%3A0x2a3e56e1f874a80!2
